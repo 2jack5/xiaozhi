@@ -1,0 +1,53 @@
+# 复制本文件为同目录的 config.yaml，再填写你自己的配置。
+# config.yaml 仅供本机使用，不要提交到 Git。
+# 以下 REPLACE_WITH_ 开头的内容均为占位符，运行前需要替换。
+
+server:
+  port: "8080"
+  mode: "debug"
+
+database:
+  host: "localhost"
+  port: "5432"
+  user: "postgres"
+  password: "REPLACE_WITH_DATABASE_PASSWORD"
+  dbname: "nutrilens"
+  sslmode: "disable"
+
+redis:
+  addr: "localhost:6379"
+  password: "" # 如 Redis 开启认证，请填写密码
+  db: 0
+
+wechat:
+  app_id: "REPLACE_WITH_WECHAT_APP_ID"
+  app_secret: "REPLACE_WITH_WECHAT_APP_SECRET"
+  token: "REPLACE_WITH_WECHAT_TOKEN"
+  encoding_aes_key: "REPLACE_WITH_WECHAT_ENCODING_AES_KEY"
+
+deepseek:
+  api_key: "REPLACE_WITH_DEEPSEEK_API_KEY"
+  base_url: "https://api.deepseek.com"
+
+jwt:
+  secret: "REPLACE_WITH_RANDOM_JWT_SECRET"
+  expire: 24 # 小时
+
+upload:
+  dir: "./uploads"
+
+rate_limit:
+  daily: 100 # 每日 AI 调用上限，按需调整
+
+cos:
+  secret_id: "REPLACE_WITH_TENCENT_SECRET_ID"
+  secret_key: "REPLACE_WITH_TENCENT_SECRET_KEY"
+  bucket: "REPLACE_WITH_COS_BUCKET"
+  region: "REPLACE_WITH_COS_REGION"
+
+notify:
+  template_id: "REPLACE_WITH_WECHAT_TEMPLATE_ID"
+  breakfast_time: "08:00"
+  lunch_time: "12:00"
+  dinner_time: "18:00"
+  check_interval: "1m"

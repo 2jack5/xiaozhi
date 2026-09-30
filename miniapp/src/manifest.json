@@ -1,0 +1,19 @@
+{
+  "name": "NutriLens",
+  "appid": "__UNI__NUTRILENS",
+  "description": "营养镜头 - AI智能饮食分析",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wx93f56eec335dada8",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "lazyCodeLoading": "requiredComponents"
+  }
+}
